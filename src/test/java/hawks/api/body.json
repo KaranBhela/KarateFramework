@@ -1,0 +1,31 @@
+      {
+          "primaryPerson":{
+              "email" : "",
+              "title":" ",
+              "firstName":" ",
+              "lastName":" ",
+              "gender":" ",
+              "maritalStatus":" ",
+              "employmentStatus":" ",
+              "dateOfBirth":" ",
+              "languagePref":" "
+          },
+          "primaryPersonMailingAddress":{
+              "addressType":" ",
+              "addressLine1":" ",
+              "city":" ",
+              "state":" ",
+              "postalCode":" ",
+              "countryCode":" "
+          },
+          "primaryPersonPhone":{
+              "phoneNumber":" ",
+              "phoneExtension":" ",
+              "phoneTime": " ",
+              "phoneType":" "
+      
+          }
+      
+          
+          }
+     

@@ -2,6 +2,8 @@ package hawks.api;
 
 import com.github.javafaker.Faker;
 
+import net.minidev.json.JSONObject;
+
 public class DataGenerator {
 
 	public static String getEmail() {
@@ -36,20 +38,20 @@ public class DataGenerator {
 	
 	public static String getGender() {
 		Faker faker = new Faker();
-		String gender = faker.name().bloodGroup();
+		String gender = faker.demographic().sex();
 		return gender;
 	}
 	
 	
 	public static String getMaritalStatus() {
 		Faker faker = new Faker();
-		String relationships = faker.relationships().any();
+		String relationships = faker.demographic().maritalStatus();
 		return relationships;
 	}
 	
 	public static String getEmploymentStatus() {
 		Faker faker = new Faker();
-		String job = faker.job().field();
+		String job = faker.job().position();
 		return job;
 	}
 	
@@ -61,7 +63,7 @@ public class DataGenerator {
 	
 	public static String getLanguagePref() {
 		Faker faker = new Faker();
-		String language = faker.programmingLanguage().name();
+		String language = faker.letterify(getLanguagePref());
 		return language;
 	}
 	
@@ -115,7 +117,7 @@ public class DataGenerator {
 	
 	public static String getPhoneTime() {
 		Faker faker = new Faker();
-		String phoneTime = faker.phoneNumber().subscriberNumber();
+		String phoneTime = faker.address().timeZone();
 		return phoneTime;
 	}
 	
@@ -125,6 +127,20 @@ public class DataGenerator {
 		String phoneType = faker.phoneNumber().cellPhone();
 		return phoneType;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
